@@ -52,9 +52,21 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
+function consoleLog() {
+  const cssRule =
+        "color: rgb(249, 162, 34);" +
+        "font-size: 60px;" +
+        "font-weight: bold;" +
+        "text-shadow: 1px 1px 5px rgb(249, 162, 34);" +
+        "filter: dropshadow(color=rgb(249, 162, 34), offx=1, offy=1);";
+      console.log("%cHey there 🤙🏻", cssRule);
+}
+
+function hideScroll() {
+  document.addEventListener("scroll", function () {
+    document.getElementById("scroll").classList.add("has-scrolled")
+  });
+}
 
 const phrases = ["Hi", "My name is ", "Nahuel del Valle"];
 
@@ -69,4 +81,6 @@ const next = () => {
   counter = (counter + 1) % phrases.length;
 };
 
+consoleLog();
 next();
+hideScroll();
