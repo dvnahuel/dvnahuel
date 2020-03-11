@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 html,
 body {
   background: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
 }
 
 .box {
@@ -15,8 +16,6 @@ body {
 }
 
 .intro {
-  /* height: 100vh; */
-  /* padding-top: 45vh; */
   text-align: center;
 }
 
@@ -34,12 +33,14 @@ body {
   font-family: "Montserrat", sans-serif;
   color: rgba(189, 54, 189, 0.877);
   text-shadow: 2px 2px 4px rgba(196, 196, 196, 0.651);
+  font-size: 19px;
 }
 
 .fab {
-  font-size: 22px;
+  font-size: 26px;
   margin: 0 6px;
   color: black;
+  margin-top: -10px;
 }
 
 .icons-wrapper {
@@ -50,6 +51,75 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+figure {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+#logo {
+  background-size: cover;
+  background-image: url(nahuel.png);
+  border-radius: 50%;
+  display: inline-block;
+  height: 128px;
+  margin: 0 auto 16px;
+  width: 128px;
+}
+
+.center-text {
+  width: 40%;
+  margin: auto;
+  text-align: justify;
+}
 
 
+h2 {
+  color: rgba(189, 54, 189, 0.877);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 80px;
+}
 
+p {
+  color: #555555;
+  line-height: 120%;
+}
+
+.fade-color {
+  color: #555;
+  font-weight: 400;
+}
+
+a {
+  color: #09f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#scroll:after {
+  bottom: 16px;
+  color: rgba(189, 54, 189, 0.877);
+  text-shadow: 2px 2px 4px rgba(196, 196, 196, 0.651);
+  content: "👇🏻 there's more! 👨🏼‍💻 👾 🤳🏼";
+  font-size: 14px;
+  letter-spacing: -1px;
+  position: absolute;
+}
+
+#scroll.has-scrolled:after {
+  opacity: 0;
+  transition: opacity .5s ease-in-out .5s
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.fab:hover {
+  color: rgba(129, 38, 129, 0.774);
+}
