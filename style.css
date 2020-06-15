@@ -121,8 +121,10 @@ a:hover {
 }
 
 .fab:hover {
-  /* color: rgba(129, 38, 129, 0.774); */
-  border-bottom: 1px solid rgba(189, 54, 189, 0.877);
+  color: #353535;
+  -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
 }
 
 @media only screen and (max-width: 600px) {
