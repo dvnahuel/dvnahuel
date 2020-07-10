@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-html,
 body {
   background: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
@@ -121,7 +120,6 @@ a:hover {
 }
 
 .fab:hover {
-  color: #353535;
   -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
@@ -142,4 +140,53 @@ a:hover {
     margin: auto;
     text-align: justify;
   }
+}
+
+
+.modes {
+  position: fixed;
+  border-radius: 100%;
+  font-size: 34px;
+  margin: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+body.dark-mode {
+  background: black !important;
+}
+
+body.dark-mode h1 {
+  color: white;
+}
+
+body.dark-mode code {
+  color: #E640E6;
+  text-shadow: none;
+}
+
+body.dark-mode a i.fab {
+  color: white !important;
+}
+
+body.dark-mode div#scroll:after {
+  color: #E640E6;
+  text-shadow: none;
+}
+
+body.dark-mode h2 {
+  color: #E640E6;
+}
+
+body.dark-mode h2 span {
+  color: white;
+}
+
+body.dark-mode p {
+  color: white;
+}
+
+body.dark-mode p a.no-bg {
+  background: none !important;
 }

@@ -84,3 +84,22 @@ const next = () => {
 consoleLog();
 next();
 hideScroll();
+
+
+document.querySelector('.modes').onclick = Mode;
+
+function Mode () {
+  const logo = document.querySelector('.modes');
+  const principal  = document.getElementById("principal");
+  principal.classList.add("dark-mode");
+  logo.innerHTML= '';
+  logo.innerHTML= '🌕';
+  logo.onclick = Cerrar;
+  function Cerrar() {
+    const logo = document.querySelector('.modes');
+    const principal  = document.getElementById("principal");
+    principal.classList.remove("dark-mode");
+    logo.innerHTML= '🌑';
+    logo.onclick = Mode;
+  }
+}
