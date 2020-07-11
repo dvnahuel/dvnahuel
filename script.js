@@ -1,3 +1,4 @@
+// Text Computer Animation
 class TextScramble {
   constructor(el) {
     this.el = el;
@@ -52,6 +53,8 @@ class TextScramble {
   }
 }
 
+// Console 'hey there' text
+
 function consoleLog() {
   const cssRule =
         "color: rgb(249, 162, 34);" +
@@ -61,6 +64,8 @@ function consoleLog() {
         "filter: dropshadow(color=rgb(249, 162, 34), offx=1, offy=1);";
       console.log("%cHey there 🤙🏻", cssRule);
 }
+
+// Text from main part 'theres more'
 
 function hideScroll() {
   document.addEventListener("scroll", function () {
@@ -85,19 +90,21 @@ consoleLog();
 next();
 hideScroll();
 
+// Dark Mode toggle
 
 document.querySelector('.modes').onclick = Mode;
 
+
 function Mode () {
   const logo = document.querySelector('.modes');
-  const principal  = document.getElementById("principal");
+  const principal = document.querySelector('body');
   principal.classList.add("dark-mode");
   logo.innerHTML= '';
   logo.innerHTML= '🌕';
   logo.onclick = Cerrar;
   function Cerrar() {
     const logo = document.querySelector('.modes');
-    const principal  = document.getElementById("principal");
+    const principal = document.querySelector('body');
     principal.classList.remove("dark-mode");
     logo.innerHTML= '🌑';
     logo.onclick = Mode;

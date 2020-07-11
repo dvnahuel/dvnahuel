@@ -28,7 +28,7 @@ body {
   color:rgba(189, 54, 189, 0.877);
 }
 
-.intro code {
+.intro p {
   font-family: "Montserrat", sans-serif;
   color: rgba(189, 54, 189, 0.877);
   text-shadow: 2px 2px 4px rgba(196, 196, 196, 0.651);
@@ -152,6 +152,7 @@ a:hover {
   cursor: pointer;
 }
 
+/* Dark Mode */
 
 body.dark-mode {
   background: #141414 !important;
@@ -161,7 +162,7 @@ body.dark-mode h1 {
   color: white;
 }
 
-body.dark-mode code {
+body.dark-mode div#scroll p {
   color: #E640E6;
   text-shadow: none;
 }
