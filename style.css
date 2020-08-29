@@ -82,7 +82,6 @@ body {
   font-size: 0;
 }
 .icon-bg-img:hover {
-  box-shadow: -1px -1px 3px #FFFFFF, 1.5px 1.5px 2px rgba(174, 174, 192, 0.4);
   box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
 }
 
